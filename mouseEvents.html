@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+	<title></title>
+</head>
+<body>
+
+
+	<button>clik me</button>
+
+
+
+
+<script>
+	
+	$(document).ready(function(){
+
+		$("button").click(function(){
+
+			$("#image:hover").css("transform", "rotate(45deg)");
+
+		})
+
+		$("button").contextmenu(function(){
+
+			$("body").css("backgroundColor", "blue");
+
+		})
+
+		$("button").dblclick(function()
+		{
+			$("body").css("backgroundColor", "skyblue");
+		})
+
+
+
+
+
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+	<title></title>
+	<style>
+		#box
+		{
+			width: 400px;
+			height: 350px;
+			border: 2px solid black;
+		}
+		
+	</style>
+</head>
+<body>
+	<br>
+<!-- 	<div class="container">
+		<br><br>
+		<div  id ="box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+		</div>
+		<button class="printbtn">Print</button>
+		<h2> </h2>
+	</div> -->
+
+	<!-- <script>
+		$(document).ready(function(){
+			$("body").keypress(function(event){
+				console.log(event);
+
+			})
+		})
+	</script>
+ -->
+
+
+ <div class="container">
+ 	<br>
+ 	<p>Maximum character 100</p>
+ 	<textarea rows=5 cols="70" maxlength="100"> </textarea>
+ 	<p id="char">Character left :<span id="rtextcont"> 100</span></p>
+ </div>
+ <script>
+ 	$(document).ready(function(){
+ 		
+ 		var max = 100;
+ 		$("textarea").keyup(function(){
+
+ 			var rcount = max - $("textarea").val().length;
+ 			$("#rtextcont").text(rcount);
+ 			$("#char").css("color","green");
+ 		})
+ 	})
+ </script>
+
+
+</body>
+</html>
